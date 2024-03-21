@@ -1,0 +1,47 @@
+header #header-up {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+header #header-up .location,
+header #header-up .phone-number,
+header #header-up .email {
+  margin-right: 15px;
+}
+header #header-up .location i,
+header #header-up .phone-number i,
+header #header-up .email i {
+  color: #427D9D;
+  font-size: 13px;
+}
+header #header-up .location span,
+header #header-up .phone-number span,
+header #header-up .email span {
+  color: rgb(175, 175, 175);
+  font-size: 13px;
+}
+header #header-up .icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+header #header-up .icons a i {
+  color: gray;
+  opacity: 0.5;
+  transition: 0.3s;
+  font-size: 20px;
+}
+header #header-up .icons a:hover i {
+  opacity: 1;
+}
+header #header-up .icons a:hover i.fa-facebook {
+  color: blue;
+}
+header #header-up .icons a:hover i.fa-linkedin {
+  color: blue;
+}
+header #header-up .icons a:hover i.fa-github {
+  color: black;
+}
+header #header-up .icons a:hover i.fa-youtube {
+  color: red;
+}/*# sourceMappingURL=home.css.map */

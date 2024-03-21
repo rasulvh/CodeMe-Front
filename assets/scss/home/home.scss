@@ -1,0 +1,61 @@
+header {
+
+    #header-up {
+        height: 30px;
+        display: flex;
+        align-items: center;
+
+        .location,
+        .phone-number,
+        .email {
+            margin-right: 15px;
+
+            i {
+                color: #427D9D;
+                font-size: 13px;
+            }
+
+            span {
+                color: rgb(175, 175, 175);
+                font-size: 13px;
+            }
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+
+                i {
+                    color: gray;
+                    opacity: 0.5;
+                    transition: 0.3s;
+                    font-size: 20px;
+                }
+
+                &:hover i {
+                    opacity: 1;
+                }
+
+                &:hover i.fa-facebook {
+                    color: blue;
+                }
+
+                &:hover i.fa-linkedin {
+                    color: blue;
+                }
+
+                &:hover i.fa-github {
+                    color: black;
+                }
+
+                &:hover i.fa-youtube {
+                    color: red;
+                }
+            }
+        }
+    }
+
+
+}
