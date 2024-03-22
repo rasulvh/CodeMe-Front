@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 header #header-up {
   height: 30px;
   display: flex;
@@ -112,6 +116,108 @@ header #navbar .navbar-items ul:not(.dropdown-list) .dropdown-li .dropdown-conte
 header #navbar .navbar-items ul:not(.dropdown-list) .dropdown-li:hover .dropdown-content {
   display: block;
 }
+header #navbar-menu-wrap {
+  display: none;
+}
+header #navbar-menu-wrap .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #navbar-menu-wrap .logo img {
+  width: 100%;
+}
+header #navbar-menu-wrap .menu {
+  background-color: #9BBEC8;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 55px;
+  padding-top: 10px;
+  transition: all 0.3s;
+}
+header #navbar-menu-wrap .menu button {
+  border: 0;
+  background-color: #427D9D;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+header #navbar-menu-wrap .menu button i {
+  font-size: 14px;
+  margin-left: 5px;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) {
+  list-style: none;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) li:not(.hover-list) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) li:not(.hover-list) a:not(.hover-list-link) {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) li:not(.hover-list) a:not(.hover-list-link):hover {
+  color: #279bd9;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages {
+  height: 22.5px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages span {
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages span i {
+  font-size: 11px;
+  margin-left: 5px;
+  color: white;
+  transition: all 0.3s;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages span:hover {
+  color: #279bd9;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages span:hover i {
+  color: #279bd9;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages ul {
+  list-style: none;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages ul li a:hover {
+  color: #279bd9;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) .menu-pages-open {
+  height: auto !important;
+}
+header #navbar-menu-wrap .menu ul:not(.menu-link-hover) li:last-child {
+  margin-bottom: 0;
+}
+header #navbar-menu-wrap .menu-open {
+  height: auto;
+}
 
 @media only screen and (max-width: 992px) {
   header #header-up {
@@ -128,6 +234,12 @@ header #navbar .navbar-items ul:not(.dropdown-list) .dropdown-li:hover .dropdown
   }
   header hr {
     margin-top: 0;
+  }
+  header #navbar {
+    display: none;
+  }
+  header #navbar-menu-wrap {
+    display: block;
   }
 }
 @media only screen and (max-width: 768px) {
